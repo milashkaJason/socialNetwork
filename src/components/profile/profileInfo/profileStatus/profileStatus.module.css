@@ -1,0 +1,6 @@
+.status {
+    margin-bottom: 15px;
+}
+.statusActive:hover {
+    cursor: pointer;
+}

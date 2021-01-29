@@ -1,0 +1,32 @@
+.profile {
+    padding: 5px;
+}
+.wrapperImg {
+    width: 100%;
+}
+
+.btnSend {
+background-color: rgb(87, 85, 85);
+border: none;
+border-radius: 3px;
+color: rgb(255, 241, 241);
+margin-bottom: 7px;
+margin-left: 183px;
+width: 42px;
+height: 20px;
+}
+.btnSend:hover {
+    cursor: pointer;
+    background-color:  rgb(80, 75, 75);
+    transition: all ease 0.4s;
+}
+.inputMessage {
+border: none;
+height: 50px;
+width: 220px;
+margin-bottom: 7px;
+}
+
+.container {
+    width: 500px;
+}

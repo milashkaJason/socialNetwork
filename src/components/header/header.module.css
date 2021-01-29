@@ -1,0 +1,21 @@
+.header {
+    grid-area: h;
+    background-color: rgb(32, 172, 182);
+    display: flex;
+    justify-content: space-around;
+    padding:0 10px 0 10px;
+}
+.header h1 {
+    text-align: center;
+    color: #e2f2ff;
+    margin: 0 auto;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.header img {
+    width: 70px;
+}
+.login {
+    color: #eeeeee;
+    text-decoration: none;
+}

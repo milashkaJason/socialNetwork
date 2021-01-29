@@ -1,0 +1,16 @@
+.user {
+    display: flex;
+}
+.photo {
+    margin-right: 15px;
+}
+.green {
+    color: #54ff54;
+}
+.red {
+color: darkred;
+}
+.name {
+    margin: 0 0 10px 150px;
+    font-size: 20px;
+}

@@ -1,0 +1,6 @@
+[0111/110508.636:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0111/114809.198:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0113/191744.033:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0115/095028.175:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0115/105612.089:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\denis\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6b891fe2-c822-4078-b8e0-fe6fa962965a: Системе не удается найти указанный путь. (0x3)
+[0120/101752.616:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

@@ -1,0 +1,16 @@
+.activePage {
+    color: #eeeeee;
+}
+.nonActivePage:hover {
+    cursor: pointer;
+    color: #eeeeee;
+}
+.nonActivePage {
+    /*border: 1px solid black;*/
+    margin: 2px;
+    padding: 2px
+}
+.paginator {
+    margin: 10px auto;
+    text-align: center;
+}

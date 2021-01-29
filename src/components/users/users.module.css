@@ -1,0 +1,46 @@
+.userPhoto {
+    width: 44px;
+    border-radius: 22px;
+}
+.userItem:hover {
+    background: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.user {
+    border: 1px solid black;
+    margin-bottom: 2px;
+    width: 300px;
+    background: #ffffff;
+    display: flex;
+}
+.user:hover {
+    background: #b09b9b;
+    transition: all ease 0.1s;
+}
+
+.btnSend {
+    background-color: rgb(87, 85, 85);
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 241, 241);
+    width: 54px;
+    height: 20px;
+}
+.btnSend:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(87, 85, 85);
+    transition: all ease 0.2s;
+}
+.activePage {
+    font-weight: bold;
+}
+.nonActivePage:hover {
+    cursor: pointer;
+    color: #eeeeee;
+}

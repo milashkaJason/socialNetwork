@@ -1,0 +1,11 @@
+.message {
+    display: inline-block;
+    margin: 0;
+}
+.itemMessage {
+    margin-bottom: 15px;
+}
+.userPhoto {
+    width: 50px;
+    border-radius: 25px;
+    }
