@@ -5,10 +5,11 @@ const INITIALIZED_SECCESS = 'INITIALIZED_SECCESS';
 
 
 let initialState = {
-    innitialized: false
+    innitialized: false as boolean
 };
+export type initialStateType = typeof initialState
 
-const appReducer = (state = initialState, action) => {
+const appReducer = (state = initialState, action: any): initialStateType => {
     switch (action.type) {
         case INITIALIZED_SECCESS:
             return {
@@ -20,10 +21,12 @@ const appReducer = (state = initialState, action) => {
             return state;
     }
 }
+type initializedSuccess = {
+    type: typeof INITIALIZED_SECCESS
+}
+export const initializedSeccess = (): initializedSuccess => ({ type: INITIALIZED_SECCESS });
 
-export const initializedSeccess = () => ({ type: INITIALIZED_SECCESS });
-
-export const initializeApp = () => (dispatch) => {
+export const initializeApp = () => (dispatch: any) => {
          let promise = dispatch(inAuthCheck());
          Promise.all([promise])
          .then(() => {

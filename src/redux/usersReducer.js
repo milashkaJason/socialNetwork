@@ -7,11 +7,12 @@ const TOTAL_USERS_COUNT = 'TOTAL_USERS_COUNT';
 const PAGE_NUMBER = 'PAGE_NUMBER';
 const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
 
+
 let initialState = {
     users: [],
     count: 10,
     page: 1,
-    totalUsersCount: 0,
+    totalUsersCount: null,
     isFetching: false
 };
 
