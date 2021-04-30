@@ -12,11 +12,11 @@ let initialState = {
         {id: 3, message: 'Blabla', likesCount: 11},
         {id: 4, message: 'Dada', likesCount: 11}
     ],
-    profile: null,
+    profile: null as any,
     status: ''
 };
 
-const profileReducer = (state = initialState, action) => {
+const profileReducer = (state = initialState, action: any) => {
     switch (action.type) {
         case ADD_POST: {
             let newPost = {
@@ -42,27 +42,45 @@ const profileReducer = (state = initialState, action) => {
             return state;
     }
 }
+type addPostActionType = {
+    type: typeof ADD_POST,
+    post: string
+}
+export const addPost = (post: string): addPostActionType => ({type: ADD_POST, post})
 
-export const addPost = (post) => ({type: ADD_POST, post})
-export const setProfile = (profile) => ({type: SET_PROFILE, profile})
-export const setStatus = (status) => ({type: SET_STATUS, status})
-export const savePhotoSuccess = (photos) => ({type: SAVE_PHOTO_SUCCESS, photos})
+type setProfileActionType = {
+    type: typeof SET_PROFILE,
+    profile: any
+}
+export const setProfile = (profile: any): setProfileActionType => ({type: SET_PROFILE, profile})
 
-export const getProfile = (userId) => async (dispatch) => {
+type setStatusActionType = {
+    type: typeof SET_STATUS,
+    status: string
+}
+export const setStatus = (status: string): setStatusActionType => ({type: SET_STATUS, status})
+
+type savePhotoSuccessActionType = {
+    type: typeof SAVE_PHOTO_SUCCESS,
+    photos: any
+}
+export const savePhotoSuccess = (photos: any): savePhotoSuccessActionType => ({type: SAVE_PHOTO_SUCCESS, photos})
+
+export const getProfile = (userId: number) => async (dispatch: any) => {
     let data = await userAPI.getProfile(userId);
     dispatch(setProfile(data));
 }
-export const getStatus = (id) => async (dispatch) => {
+export const getStatus = (id: number) => async (dispatch: any) => {
     let data = await userAPI.getStatus(id);
     dispatch(setStatus(data));
 }
-export const changeStatus = (status) => async (dispatch) => {
+export const changeStatus = (status: string) => async (dispatch: any) => {
     let data = await userAPI.setStatus(status);
     if (data.resultCode === 0) {
         dispatch(setStatus(status));
     }
 }
-export const savePhoto = (file) => async (dispatch) => {
+export const savePhoto = (file: any) => async (dispatch: any) => {
     let data = await userAPI.savePhoto(file);
     if (data.resultCode === 0) {
         dispatch(savePhotoSuccess(data.data.photos));
